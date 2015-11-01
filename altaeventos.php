@@ -166,39 +166,78 @@
                     </div>
                 </div>
                 <!--END TITLE & BREADCRUMB PAGE-->
-                <!--BEGIN CONTENT-->
                 <div class="page-content">
                     <div id="tab-general">
-                      <div id="sum_box" class="row mbl"></div>
-                         
+                      <div id="sum_box" class="row mbl"></div> 
                         <div class="row mbl">
                        
-                            <form action="" name="formaltas" method="post">
- 
-<table class="hover">
- 
-<tr>
- 
-<td>Titulo</td>
- 
-<td><input type="text" name="titulo" maxlength="60" size="50"/></td>
- 
-</tr>
- 
-<tr>
- 
-<td>Texto</td>
- 
-<td><textarea name="texto" cols="80" rows="7"></textarea></td>
- 
-</tr>
- 
-</table>
- 
-</form
-
-                <!--END CONTENT-->
+					   					<!-- AQUI EMPIEZA EL FORULARIO -->
+										<div class="container" align="center">
+										<div class="col-lg-8" align="center">
+										<div class="panel panel-green">
+                                            <div class="panel-heading">
+                                                Dar de alta nuevo evento</div>
+                                            <div class="panel-body pan">
+                                                <form action="altaeve.php" method="post" class="form-horizontal">
+                                                <div class="form-body pal">
+                                                    <div class="form-group">
+                                                        <label for="inputName" class="col-md-3 control-label">
+                                                            Nombre:</label>
+                                                        <div class="col-md-9">
+                                                            <div class="input-icon right">
+                                                                <i class="fa fa-user"></i>
+                                                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword" class="col-md-3 control-label">
+                                                            Tipo:</label>
+                                                        <div class="col-md-9">
+                                                            <div class="input-icon right">
+                                                                <i class="fa fa-barcode"></i>
+                                                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                                        </div>
+                                                    </div>
+													<div class="form-group">
+                                                        <label for="inputName" class="col-md-3 control-label">
+                                                            Fecha:</label>
+                                                        <div class="col-md-9">
+                                                            <div class="input-icon right">
+                                                                <i class="fa fa-calendar"></i>
+                                                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                                        </div>
+                                                    </div>
+													<div class="form-group">
+                                                        <label for="inputName" class="col-md-3 control-label">
+                                                            Hora:</label>
+                                                        <div class="col-md-9">
+                                                            <div class="input-icon right">
+                                                                <i class="fa fa-pencil"></i>
+                                                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                                        </div>
+                                                    </div>
+													<div class="form-group">
+                                                        <label for="inputName" class="col-md-3 control-label">
+                                                            Lugar:</label>
+                                                        <div class="col-md-9">
+                                                            <div class="input-icon right">
+                                                                <i class="fa fa-plane"></i>
+                                                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                                        </div>
+                                                    </div>
+                                                <div class="form-actions pal">
+                                                    <div class="form-group mbn">
+                                                        <div class="col-md-offset-3 col-md-6">
+															<input type="submit" class="btn btn-success"></input>
+															</div>
+														</div>
+                                                </form>
+                                            </div>
+                                        </div>
+					   </div>
+					   <!--AQUI TERMINA EL FORMULARIO-->
                 </div>
+
                                     </div>
                                 </div>
                             </div>

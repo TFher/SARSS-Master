@@ -15,7 +15,7 @@
         
 ?>
 <head>
-    <title>SARSS</title>
+    <title>SARSS - Inicio</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" href="images/icons/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
-    <!--Loading bootstrap css-->
+    <!--Librerias bootstrap css-->
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
     <link type="text/css" rel="stylesheet" href="styles/jquery-ui-1.10.4.custom.min.css">
@@ -37,20 +37,14 @@
     <link type="text/css" rel="stylesheet" href="styles/pace.css">
     <link type="text/css" rel="stylesheet" href="styles/jquery.news-ticker.css">
 	<link type="text/css" rel="stylesheet" href="styles/form.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
 <body>
     <div>
-        <!--BEGIN THEME SETTING-->
-
-        <!--END THEME SETTING-->
-        <!--BEGIN BACK TO TOP-->
-        <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
-        <!--END BACK TO TOP-->
-        <!--BEGIN TOPBAR-->
+        <!--EMPIEZA BARRA DE ARRIBA-->
         <div id="header-topbar-option-demo" class="page-header-topbar">
             <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
             <div class="navbar-header">
-                <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 <a id="logo" href="main.html" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text">Administrador</span><span style="display: none" class="logo-text-icon">µ</span></a></div>
             <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
             <script>
@@ -78,66 +72,30 @@
                 <div class="news-update-box hidden-xs"></div>
                 
                 <ul class="nav navbar navbar-top-links navbar-right mbn">
-                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-bell fa-fw"></i><span class="badge badge-green"></span></a>
-                        
-
-                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-tasks fa-fw"></i><span class="badge badge-yellow"></span></a>
-                        
                     </li>
                     
                     <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle">&nbsp;<span class="hidden-xs">
                     		<?php
 		//Mostramos el nombre del ususario logueado en base a la sesion
-		    echo "Bienvenido ";
+		    echo "Hola! ";
 		    echo $_SESSION["usuario"];
 		?>
                     </span>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-user pull-right">
                             <li><a href="eventos.php"><i class="fa fa-calendar"></i>Eventos</a></li>    
                             <li class="divider"></li>                           
-                            <li><a href="cierra.php"><i class="fa fa-key"></i>Cierra sesion</a></li>
+                            <li><a href="cierra.php"><i class="fa fa-key"></i>Cerrar sesión</a></li>
                         </ul>
                     </li>
                    
                 </ul>
             </div>
         </nav>
-            <!--BEGIN MODAL CONFIG PORTLET-->
-            <div id="modal-config" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" data-dismiss="modal" aria-hidden="true" class="close">
-                                &times;</button>
-                            <h4 class="modal-title">
-                                Modal title</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend et nisl eget
-                                porta. Curabitur elementum sem molestie nisl varius, eget tempus odio molestie.
-                                Nunc vehicula sem arcu, eu pulvinar neque cursus ac. Aliquam ultricies lobortis
-                                magna et aliquam. Vestibulum egestas eu urna sed ultricies. Nullam pulvinar dolor
-                                vitae quam dictum condimentum. Integer a sodales elit, eu pulvinar leo. Nunc nec
-                                aliquam nisi, a mollis neque. Ut vel felis quis tellus hendrerit placerat. Vivamus
-                                vel nisl non magna feugiat dignissim sed ut nibh. Nulla elementum, est a pretium
-                                hendrerit, arcu risus luctus augue, mattis aliquet orci ligula eget massa. Sed ut
-                                ultricies felis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="btn btn-default">
-                                Close</button>
-                            <button type="button" class="btn btn-primary">
-                                Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--END MODAL CONFIG PORTLET-->
+            
         </div>
-        <!--END TOPBAR-->
-        <div id="wrapper"><span class="navbar-default navbar-static-side"></span>
-            <!--BEGIN SIDEBAR MENU-->
+        <!--TERMINA BARRA DE ARRIBA-->
+
+            <!--EMPIEZA SIDEBAR DE LA IZQUIERDA-->
           <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
                 data-position="right" class="navbar-default navbar-static-side">
             <div class="sidebar-collapse menu-scroll">
@@ -146,13 +104,6 @@
                      <div class="clearfix"></div>
                     <li class="active"><a href="main.php"><i class="fa fa-desktop fa-fw">
 					</i><span class="menu-title">Inicio</span></a></li>
-                    
-                    <!--
-                    </li>
-                    <li><a href="UIElements.html"><i class="fa fa-send-o fa-fw">
-                        <div class="icon-bg bg-green"></div>
-                    </i><span class="menu-title">UI Elements</span></a>
-                    -->
                     </li>
                     <li><a href="eventos.php"><i class="fa fa-edit fa-fw">
                         <div class="icon-bg bg-violet"></div>
@@ -172,34 +123,6 @@
                     <li><a href="#"><i class="fa fa-file-o fa-fw">
                         <div class="icon-bg bg-yellow"></div>
                     </i><span class="menu-title">Usuarios</span></a>
-                      
-                    <!-- 
-                    </li>
-                    <li><a href="Extras.html"><i class="fa fa-gift fa-fw">
-                        <div class="icon-bg bg-grey"></div>
-                    </i><span class="menu-title">Extras</span></a>
-                      
-                    </li>
-                    <li><a href="Dropdown.html"><i class="fa fa-sitemap fa-fw">
-                        <div class="icon-bg bg-dark"></div>
-                    </i><span class="menu-title">Multi-Level Dropdown</span></a>
-                      
-                    </li>
-                    <li><a href="Email.html"><i class="fa fa-envelope-o">
-                        <div class="icon-bg bg-primary"></div>
-                    </i><span class="menu-title">Email</span></a>
-                      
-                    </li>
-                    <li><a href="Charts.html"><i class="fa fa-bar-chart-o fa-fw">
-                        <div class="icon-bg bg-orange"></div>
-                    </i><span class="menu-title">Charts</span></a>
-                    
-                      
-                    </li>
-                    <li><a href="Animation.html"><i class="fa fa-slack fa-fw">
-                        <div class="icon-bg bg-green"></div>
-                    </i><span class="menu-title">Animations</span></a></li>
-                    -->
                 </ul>
                 
             </div>
@@ -207,75 +130,13 @@
             
           </nav>
         	
-            <!--END SIDEBAR MENU-->
-            
-            <!--BEGIN CHAT FORM-->
-            <div id="chat-form" class="fixed">
-            
-                <div class="chat-inner">
-                    <h2 class="chat-header">
-                        <a href="javascript:;" class="chat-form-close pull-right"><i class="glyphicon glyphicon-remove">
-                        </i></a><i class="fa fa-user"></i>&nbsp; Chat &nbsp;<span class="badge badge-info">3</span></h2>
-                    <div id="group-1" class="chat-group">
-                        <strong>Favorites</strong><a href="#"><span class="user-status is-online"></span> <small>
-                            Verna Morton</small> <span class="badge badge-info">2</span></a><a href="#"><span
-                                class="user-status is-online"></span> <small>Delores Blake</small> <span class="badge badge-info is-hidden">
-                                    0</span></a><a href="#"><span class="user-status is-busy"></span> <small>Nathaniel Morris</small>
-                                        <span class="badge badge-info is-hidden">0</span></a><a href="#"><span class="user-status is-idle"></span>
-                                            <small>Boyd Bridges</small> <span class="badge badge-info is-hidden">0</span></a><a
-                                                href="#"><span class="user-status is-offline"></span> <small>Meredith Houston</small>
-                                                <span class="badge badge-info is-hidden">0</span></a></div>
-                    <div id="group-2" class="chat-group">
-                        <strong>Office</strong><a href="#"><span class="user-status is-busy"></span> <small>
-                            Ann Scott</small> <span class="badge badge-info is-hidden">0</span></a><a href="#"><span
-                                class="user-status is-offline"></span> <small>Sherman Stokes</small> <span class="badge badge-info is-hidden">
-                                    0</span></a><a href="#"><span class="user-status is-offline"></span> <small>Florence
-                                        Pierce</small> <span class="badge badge-info">1</span></a></div>
-                    <div id="group-3" class="chat-group">
-                        <strong>Friends</strong><a href="#"><span class="user-status is-online"></span> <small>
-                            Willard Mckenzie</small> <span class="badge badge-info is-hidden">0</span></a><a
-                                href="#"><span class="user-status is-busy"></span> <small>Jenny Frazier</small>
-                                <span class="badge badge-info is-hidden">0</span></a><a href="#"><span class="user-status is-offline"></span>
-                                    <small>Chris Stewart</small> <span class="badge badge-info is-hidden">0</span></a><a
-                                        href="#"><span class="user-status is-offline"></span> <small>Olivia Green</small>
-                                        <span class="badge badge-info is-hidden">0</span></a></div>
-                </div>
-                <div id="chat-box" style="top: 400px">
-                    <div class="chat-box-header">
-                        <a href="#" class="chat-box-close pull-right"><i class="glyphicon glyphicon-remove">
-                        </i></a><span class="user-status is-online"></span><span class="display-name">Willard
-                            Mckenzie</span> <small>Online</small>
-                    </div>
-                    <div class="chat-content">
-                        <ul class="chat-box-body">
-                            <li>
-                                <p>
-                                    <img src="images/avatar/128.jpg" class="avt" /><span class="user">John Doe</span><span
-                                        class="time">09:33</span></p>
-                                <p>
-                                    Hi Swlabs, we have some comments for you.</p>
-                            </li>
-                            <li class="odd">
-                                <p>
-                                    <img src="images/avatar/48.jpg" class="avt" /><span class="user">Swlabs</span><span
-                                        class="time">09:33</span></p>
-                                <p>
-                                    Hi, we're listening you...</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="chat-textarea">
-                        <input placeholder="Type your message" class="form-control" /></div>
-                </div>
-            </div>
-            <!--END CHAT FORM-->
-            <!--BEGIN PAGE WRAPPER-->
+            <!--TERMINA SIDEBAR DE LA IZQUIERDA-->
+            <!--EMPIEZA EL RECORTADO DE PAGINA-->
             <div id="page-wrapper">
-                <!--BEGIN TITLE & BREADCRUMB PAGE-->
+                <!--TERMINA EL RECORTADO DE PAGINA-->
                 <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                     <div class="page-header pull-left">
-                        <div class="page-title">
-                            Inicio</div>
+                        <div class="page-title"><img  src="images/logopeque.png"/></div>
                     </div>
                     <ol class="breadcrumb page-breadcrumb pull-right">
                         <li><i class="fa fa-home"></i>&nbsp;<a href="main.php">SARSS</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
@@ -286,44 +147,43 @@
                     </div>
                 </div>
                 <!--END TITLE & BREADCRUMB PAGE-->
-                <!--BEGIN CONTENT-->
-                <div class="page-content">
-                    <div id="tab-general">
-                    <img  src="images/logo.png"/>
-                        <div id="sum_box" class="row mbl"></div>
+		  <!--  Aqui empieza el cuadro blanco sin usar  -->
+	              <div class="page-content">
+  	 		          <div id="tab-general">
+  	                    <div id="sum_box" class="row mbl"></div>
                          
-                        <div class="row mbl">
-                       
+			
                             <div class="col-lg-8">
                                 <div class="panel">
                                     <div class="panel-body">
                                         <div class="row">
 
+                                          <p align="center"><h1 align="center">!Bienvenidos!</h1></p>
+                                          <p></p>
+                                          <p><h4>Estas en el Sistema Administrativo de Registro Para el Servicio Social.</h4></p>
                                           <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
-                                          <p>&nbsp;</p>
+                                          <p><h5><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="sr-only">Error:</span> Aquí podrás crear nuevos 																																																																																											eventos, asi como modificarlos y eliminarlos.</h5></p>
+                                          <p><h5><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lo mismo podrás hacer con los usuarios que quieras agregar.</h5></p>
+                                          <p><h5><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Podrás consultar los eventos pasados y tambien los actuales.</h5></p>
+                                          <p><h5><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Tendrás la posibilidad de generar reportes de los asistentes del evento.</h5></p>
                                       </div>
                                     </div>
                                 </div>
                             </div>
+							<!-- Aqui termina -->
+							
                         </div>
                         <div class="row mbl"></div>
-                        <div class="row"><!--<div class="col-lg-4">
-                            <div id="my-calendar"></div>
-                        </div>--></div>
+                        <div class="row"></div>
                     </div>
                 </div>
+				
+		
                 <!--END CONTENT-->
                 <!--BEGIN FOOTER-->
                 <div id="footer">
                     <div class="copyright">
-                        <a href="http://themifycloud.com">SARSS beta 2.0 por AFL</a></div>
+                        <h5>UACH - Facultad de Ingeniería</h5></div>
                 </div>
                 <!--END FOOTER-->
             </div>

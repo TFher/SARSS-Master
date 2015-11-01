@@ -112,7 +112,7 @@
         <!--END TOPBAR-->
 		
             <!--BEGIN SIDEBAR MENU-->
-<nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
+          <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
                 data-position="right" class="navbar-default navbar-static-side">
             <div class="sidebar-collapse menu-scroll">
                 <ul id="side-menu" class="nav">
@@ -125,19 +125,28 @@
                     </li>
                     <li class="active"><a href="eventos.php"><i class="fa fa-edit fa-fw">
                         <div class="icon-bg bg-violet"></div>
-                    </i><span class="menu-title">Eventos</span></a></li>
+                    </i><span class="menu-title">Eventos</span></a>
+                      
+                    </li>
                     <li><a href="#"><i class="fa fa-th-list fa-fw">
                         <div class="icon-bg bg-blue"></div>
-                    </i><span class="menu-title">Consultas</span></a>                    </li>
+                    </i><span class="menu-title">Consultas</span></a>
+                          
+                    </li>
                     <li><a href="#"><i class="fa fa-database fa-fw">
                         <div class="icon-bg bg-red"></div>
-                    </i><span class="menu-title">Reportes</span></a>                    </li>
+                    </i><span class="menu-title">Reportes</span></a>
+                      
+                    </li>
                     <li><a href="#"><i class="fa fa-file-o fa-fw">
                         <div class="icon-bg bg-yellow"></div>
                     </i><span class="menu-title">Usuarios</span></a>
+					
                 </ul>
+                
             </div>
-            <img id="imagen" height="250" width="240" src="images/blason.png"/></nav>
+            <img id="imagen" height="250" width="240" src="images/blason.png"/>
+          </nav>
             <!--END SIDEBAR MENU-->
             
           
@@ -158,29 +167,38 @@
                 </div>
                 <!--END TITLE & BREADCRUMB PAGE-->
                 <!--BEGIN CONTENT-->
-				
                 <div class="page-content">
                     <div id="tab-general">
                       <div id="sum_box" class="row mbl"></div>
                          
                         <div class="row mbl">
                        
-                            <div class="col-lg-8">
-                                <div class="panel">
-                                    <div class="panel-body" align="center"
-	
-	<div class="bs-example" data-example-id="simple-table">
-    <table class="table table-hover">   
-      <thead>
-        <tr>
-          <th><a href="altaeventos.php"><span class="glyphicon glyphicon-plus"></span> Agregar nuevo evento</a></th>
-          <th><a href="modificaeventos.php"><span class="glyphicon glyphicon-check"></span> Modificar un evento</a></th>
-          <th><a href="bajaeventos.php"><span class="glyphicon glyphicon-trash"></span> Eliminar un evento</a></th>
-        </tr>
-      </thead>
-      
-    </table>
-										</div>
+                            <form action="" name="formaltas" method="post">
+ 
+<table class="hover">
+ 
+<tr>
+ 
+<td>Titulo</td>
+ 
+<td><input type="text" name="titulo" maxlength="60" size="50"/></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td>Texto</td>
+ 
+<td><textarea name="texto" cols="80" rows="7"></textarea></td>
+ 
+</tr>
+ 
+</table>
+ 
+</form
+
+                <!--END CONTENT-->
+                </div>
                                     </div>
                                 </div>
                             </div>
